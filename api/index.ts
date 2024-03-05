@@ -8,10 +8,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Define the previous route
-app.get('/', (req, res) => res.send('Express on Vercel'));
+// app.get('/', (req, res) => res.send('Express on Vercel'));
 
 // Define the new route for text2image
-app.post('/text2image', async (req, res) => {
+app.post('/', async (req, res) => {
     console.log('Request received:', req.body);
   const {
     token,
