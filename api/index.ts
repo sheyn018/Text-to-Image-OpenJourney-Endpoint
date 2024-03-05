@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+ 
 // Define the previous route
 // app.get('/', (req, res) => res.send('Express on Vercel'));
 
