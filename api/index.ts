@@ -11,7 +11,8 @@ app.use(express.json());
 // app.get('/', (req, res) => res.send('Express on Vercel'));
 
 app.post('/', async (req, res) => {
-    console.log('Request received:', req.body);
+  console.log('Request received:', req.body);
+
   const {
     token,
     model = 'prompthero/openjourney-v4',
@@ -45,7 +46,7 @@ app.post('/', async (req, res) => {
 });
 
 // Start the server
-const port = 3800; // Change the port if needed
+const port = 3800;
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
