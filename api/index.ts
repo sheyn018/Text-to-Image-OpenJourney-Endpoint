@@ -20,7 +20,7 @@ app.post('/', async (req, res) => {
   if (!prompt) {
     return res.status(400).send('Missing required parameters: prompt');
   }
-
+ 
   const inference = new HfInference(token);
 
   try {
