@@ -12,7 +12,7 @@ app.post('/', async (req, res) => {
 
   const {
     token,
-    model = 'prompthero/openjourney',
+    model = 'prompthero/openjourney-v4',
     prompt,
     parameters,
   } = req.body;
