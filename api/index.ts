@@ -35,7 +35,7 @@ app.post('/', async (req, res) => {
 
     res.json({ buffer: img });
   } 
-  
+
   catch (error) {
     console.error(error);
     res.status(500).send(`Error generating the image: ${error.message}`);
